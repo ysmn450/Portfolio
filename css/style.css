@@ -1,0 +1,608 @@
+/* ===================================
+   STYLE.CSS — Portfolio Yasmine Benarab
+   =================================== */
+
+/* --- Reset de base --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: white;
+  color: #111111;
+}
+
+/* ===================================
+   NAVIGATION
+   =================================== */
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  background: white;
+  border-bottom: 2px solid #111111;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 40px;
+}
+
+.nav-logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #111111;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav ul a {
+  text-decoration: none;
+  color: #111111;
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+nav ul a:hover {
+  color: #f2a7bf;
+}
+
+
+
+/* ===================================
+   SECTION ACCUEIL
+   =================================== */
+
+#accueil {
+  min-height: 100vh;
+  background-color: #f2a7bf;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 120px 30px 60px 30px;
+}
+
+.badge {
+  background: #111111;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding: 8px 20px;
+  margin-bottom: 30px;
+}
+
+#accueil h1 {
+  font-size: 80px;
+  color: white;
+  text-shadow: 4px 4px 0px #111111;
+  letter-spacing: 4px;
+  line-height: 1;
+  margin-bottom: 15px;
+}
+
+.role {
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: #111111;
+  margin-bottom: 25px;
+}
+
+.reseaux {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.btn-reseau {
+  display: inline-block;
+  background: white;
+  color: #111111;
+  border: 2px solid #111111;
+  padding: 8px 16px;
+  font-size: 12px;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 2px 2px 0px #111111;
+}
+
+.btn-reseau:hover {
+  background: #111111;
+  color: white;
+}
+
+.btn-principal {
+  display: inline-block;
+  background: #111111;
+  color: white;
+  border: 2px solid #111111;
+  padding: 14px 35px;
+  font-size: 13px;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  box-shadow: 4px 4px 0px #c73568;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.btn-principal:hover {
+  background: #f2a7bf;
+  border-color: #f2a7bf;
+}
+
+.scroll-txt {
+  color: rgba(0,0,0,0.4);
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+/* ===================================
+   COULEURS DE FOND DES SECTIONS
+   =================================== */
+
+.section-creme {
+  background: #fdf6ec;
+  border-top: 3px solid #111111;
+  padding: 100px 60px 80px 60px;
+}
+
+.section-noire {
+  background: #111111;
+  color: white;
+  border-top: 3px solid #f2a7bf;
+  padding: 100px 60px 80px 60px;
+}
+
+.section-rose {
+  background-color: #f2a7bf;
+  border-top: 3px solid #111111;
+  padding: 100px 60px 80px 60px;
+}
+
+/* ===================================
+   TITRES DE SECTIONS
+   =================================== */
+
+.eyebrow {
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #f2a7bf;
+  margin-bottom: 10px;
+}
+
+.section-noire .eyebrow {
+  color: #f2a7bf;
+}
+
+.section-rose .eyebrow {
+  color: #111111;
+}
+
+section h2 {
+  font-size: 55px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  line-height: 1;
+  margin-bottom: 30px;
+}
+
+.section-noire h2 {
+  color: white;
+}
+
+.section-rose h2 {
+  color: white;
+  text-shadow: 3px 3px 0px #111111;
+}
+
+/* Couleurs dans les titres */
+.rose {
+  color: #f2a7bf;
+}
+
+.outline {
+  -webkit-text-stroke: 2px #111111;
+  color: transparent;
+}
+
+.outline-blanc {
+  -webkit-text-stroke: 2px white;
+  color: transparent;
+}
+
+/* ===================================
+   SECTION QUI SUIS-JE
+   =================================== */
+
+.apropos-contenu {
+  max-width: 700px;
+  margin-top: 20px;
+}
+
+.apropos-texte p {
+  color: #444444;
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.btn-cv {
+  display: inline-block;
+  background: white;
+  color: #111111;
+  border: 2px solid #111111;
+  padding: 12px 28px;
+  font-size: 12px;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  box-shadow: 3px 3px 0px #111111;
+}
+
+.btn-cv:hover {
+  background: #f2a7bf;
+}
+
+/* ===================================
+   SECTION BTS SIO
+   =================================== */
+
+
+.bts-intro {
+  max-width: 1000px;
+  color: rgba(255,255,255,0.6);
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 40px;
+}
+
+.bts-cartes {
+  display: flex;
+  gap: 25px;
+}
+
+.bts-carte {
+  flex: 1;
+  border: 2px solid rgba(255,255,255,0.2);
+  padding: 30px;
+  position: relative;
+}
+
+.bts-carte.sisr {
+  border-top: 4px solid #f2a7bf;
+}
+
+.bts-carte.slam {
+  border-top: 4px solid #f2a7bf;
+}
+
+.bts-carte:hover {
+  border-color: rgba(255,255,255,0.5);
+}
+
+.bts-carte .numero {
+  font-size: 60px;
+  font-weight: bold;
+  color: rgba(255,255,255,0.07);
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  line-height: 1;
+}
+
+.bts-carte .icone {
+  font-size: 35px;
+  margin-bottom: 15px;
+}
+
+.bts-carte h3 {
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  color: #f2a7bf;
+}
+
+.bts-carte p {
+  color: rgba(255,255,255,0.6);
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* ===================================
+   SECTION PROJETS
+   =================================== */
+
+.projets-grille {
+  display: flex;
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.projet-carte {
+  flex: 1;
+  background: #f2a7bf;
+  border: 1.5px solid rgba(0,0,0,0.25);
+  display: flex;
+  flex-direction: column;
+}
+
+.projet-carte:hover {
+  margin-top: -5px;
+}
+
+.projet-haut {
+  padding: 35px 20px 25px 20px;
+  text-align: center;
+  flex: 1;
+}
+
+.projet-icone {
+  font-size: 30px;
+  margin-bottom: 15px;
+  color: #111111;
+}
+
+.projet-haut p {
+  color: #111111;
+  font-size: 14px;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+.projet-lien {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #111111;
+  text-decoration: none;
+  border-bottom: 1.5px solid #111111;
+  padding-bottom: 2px;
+}
+
+.projet-lien:hover {
+  color: #c73568;
+  border-color: #c73568;
+}
+
+.projet-bas {
+  border-top: 1.5px solid rgba(0,0,0,0.25);
+  background: white;
+  padding: 14px 20px;
+  text-align: center;
+}
+
+.projet-bas h3 {
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #111111;
+}
+
+/* Commentaires */
+.projet-commentaires {
+  border-top: 1px solid #eeeeee;
+  padding: 15px 20px;
+  background: white;
+}
+
+.projet-commentaires h4 {
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #f2a7bf;
+  margin-bottom: 10px;
+}
+
+.commentaire {
+  background: #fdf0f5;
+  border: 1px solid #eeeeee;
+  padding: 7px 10px;
+  font-size: 13px;
+  color: #555555;
+  margin-bottom: 7px;
+}
+
+.commentaire strong {
+  color: #111111;
+  font-size: 12px;
+}
+
+.commentaire-form {
+  display: flex;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.commentaire-form input {
+  flex: 1;
+  border: 1.5px solid #dddddd;
+  padding: 6px 10px;
+  font-size: 13px;
+  outline: none;
+}
+
+.commentaire-form input:focus {
+  border-color: #f2a7bf;
+}
+
+.commentaire-form button {
+  background: #111111;
+  color: white;
+  border: none;
+  padding: 6px 14px;
+  font-size: 11px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.commentaire-form button:hover {
+  background: #f2a7bf;
+  color: #111111;
+}
+
+/* ===================================
+   SECTION CONTACT
+   =================================== */
+
+#contact h2 {
+  color: white;
+  text-shadow: 3px 3px 0px #111111;
+}
+
+.coordonnees {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 35px;
+  justify-content: center;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: white;
+  border: 2px solid #111111;
+  padding: 9px 18px;
+  font-size: 13px;
+  font-weight: bold;
+  color: #111111;
+  text-decoration: none;
+  box-shadow: 2px 2px 0px #111111;
+}
+
+.chip:hover {
+  background: #111111;
+  color: white;
+}
+
+/* Formulaire flottant */
+.formulaire-boite {
+  background: white;
+  border: 2px solid #111111;
+  box-shadow: 6px 6px 0px #111111;
+  padding: 35px;
+  width: 100%;
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+.form-ligne {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 0;
+}
+
+.form-groupe {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 15px;
+  flex: 1;
+}
+
+.form-groupe label {
+  font-size: 11px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #555555;
+}
+
+.form-groupe input,
+.form-groupe textarea {
+  border: 1.5px solid #dddddd;
+  padding: 10px 14px;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  background: #fafafa;
+  outline: none;
+  resize: vertical;
+}
+
+.form-groupe input:focus,
+.form-groupe textarea:focus {
+  border-color: #f2a7bf;
+  background: white;
+}
+
+.btn-envoyer {
+  width: 100%;
+  background: #111111;
+  color: white;
+  border: 2px solid #111111;
+  padding: 14px;
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  cursor: pointer;
+  box-shadow: 3px 3px 0px #f2a7bf;
+}
+
+.btn-envoyer:hover {
+  background: #f2a7bf;
+  border-color: #f2a7bf;
+  color: #111111;
+}
+
+#msg-succes {
+  display: none;
+  color: #c73568;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* ===================================
+   FOOTER
+   =================================== */
+
+footer {
+  background: #111111;
+  color: rgba(255,255,255,0.5);
+  text-align: center;
+  padding: 35px;
+  font-size: 13px;
+  border-top: 3px solid #f2a7bf;
+}
+
+footer span {
+  color: #f2a7bf;
+  font-weight: bold;
+}
