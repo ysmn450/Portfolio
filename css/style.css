@@ -367,7 +367,8 @@ section h2 {
 }
 
 .projet-icone {
-  font-size: 30px;
+  font-size: 16px;
+  font-weight: bold;
   margin-bottom: 15px;
   color: #111111;
 }
