@@ -472,7 +472,109 @@ section h2 {
 
 .commentaire-form button:hover {
   background: #f2a7bf;
+  color: #f7bdbd;
+}
+
+
+/* ===================================
+   SECTION VEILLE
+   =================================== */
+
+#veille {
+  background: white;
+  border-top: 3px solid #111111;
+  padding: 100px 60px 80px 60px;
+}
+
+#veille .eyebrow {
+  color: #f2a7bf;
+}
+
+#veille h2 {
   color: #111111;
+}
+
+.veille-intro {
+  max-width: 750px;
+  margin-bottom: 60px;
+}
+
+.veille-intro p {
+  font-size: 15px;
+  color: #555555;
+  line-height: 1.8;
+  margin-bottom: 12px;
+}
+
+.veille-intro strong {
+  color: #111111;
+}
+
+.veille-outils {
+  font-size: 13px;
+  color: #aaaaaa;
+  font-style: italic;
+  margin-top: 5px;
+}
+
+.veille-theme {
+  margin-bottom: 60px;
+}
+
+.veille-theme-titre {
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: white;
+  background: #111111;
+  display: inline-block;
+  padding: 8px 20px;
+  margin-bottom: 30px;
+  border-left: 5px solid #f2a7bf;
+}
+
+.veille-articles {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.veille-article {
+  border: 1.5px solid #eeeeee;
+  padding: 25px 30px;
+  background: #fafafa;
+  border-left: 4px solid #f2a7bf;
+}
+
+.veille-article h4 {
+  font-size: 15px;
+  font-weight: bold;
+  color: #111111;
+  margin-bottom: 8px;
+}
+
+.veille-article p {
+  font-size: 14px;
+  color: #555555;
+  line-height: 1.7;
+  margin-bottom: 12px;
+}
+
+.veille-source {
+  font-size: 12px;
+  color: #aaaaaa;
+  font-style: italic;
+}
+
+.veille-source a {
+  color: #f2a7bf;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.veille-source a:hover {
+  text-decoration: underline;
 }
 
 /* ===================================
